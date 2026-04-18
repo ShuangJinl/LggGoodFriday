@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "thejinx",
+  "version": "${version}",
+  "name": "The Jinx",
+  "description": "A Fabric mod where one unlucky player suffers extreme punishments.",
+  "authors": [
+    "TheLgg"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.thelgg.thejinx.TheJinxMod"
+    ],
+    "client": [
+      "com.thelgg.thejinx.client.TheJinxClient"
+    ],
+    "cardinal-components": [
+      "com.thelgg.thejinx.data.JinxEntityComponents"
+    ]
+  },
+  "mixins": [
+    "thejinx.mixins.json"
+  ],
+  "custom": {
+    "cardinal-components": [
+      "thejinx:jinx_data"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.6",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cardinal-components-base": ">=7.3.1",
+    "cardinal-components-entity": ">=7.3.1"
+  }
+}

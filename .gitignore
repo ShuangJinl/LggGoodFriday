@@ -1,0 +1,33 @@
+# Gradle / Fabric Loom
+.gradle/
+build/
+out/
+classes/
+
+# Loom / dev runs (if generated at repo root)
+run/
+run-client/
+run-server/
+remappedSrc/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# Local env (if you add secrets later)
+.env
+.env.*
